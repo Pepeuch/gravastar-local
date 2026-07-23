@@ -2,6 +2,29 @@
 
 Miroir local du configurateur web GravaStar, préparé pour un usage hors ligne sur `localhost` sans réécriture du frontend d'origine.
 
+
+## Why this project exists
+
+This project was originally created after repeated issues with the official GravaStar web configurator.
+
+During normal use, the official configurator frequently suffered from:
+
+- connection failures to supported devices;
+- excessive latency when reading or writing keyboard settings;
+- dependence on external online services, making the configurator unreliable when Internet connectivity was poor or unavailable.
+
+These issues made the official configurator difficult to use reliably for day-to-day configuration.
+
+The goal of this project is **not** to replace GravaStar's work, but to provide a reproducible, fully local and offline-capable environment for using compatible devices.
+
+Current objectives include:
+
+- running entirely offline;
+- reproducible deployment;
+- documenting the WebHID protocol;
+- improving reliability and responsiveness;
+- progressively replacing proprietary components with an open implementation.
+
 ## Structure
 
 - `site/original/` contient la copie source non modifiée du site statique.
@@ -77,3 +100,6 @@ Les détails sont dans [docs/supported-devices.md](/home/pepeuch/Documents/grava
 - La fonction de rythme musical basée sur `localhost:15371` est conservée comme branche optionnelle non validée dans ce miroir local.
 
 Plus de détails dans [docs/security.md](/home/pepeuch/Documents/gravastar-local-1/docs/security.md).
+
+
+This project is an independent community effort and is not affiliated with or endorsed by GravaStar.
